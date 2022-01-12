@@ -94,7 +94,7 @@ return [
         'berea-wordpress' => [
             // for WordPress database (used by Corcel)
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => env('DB_HOST', '127.0.0.1'),
             'database' => 'berea_wordpress',
             'username' => 'root',
             'password' => '',

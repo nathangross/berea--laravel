@@ -91,6 +91,20 @@ return [
             'prefix_indexes' => true,
         ],
 
+        'berea-wordpress' => [
+            // for WordPress database (used by Corcel)
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'database' => 'berea_wordpress',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => 'wp_',
+            'strict' => false,
+            'engine' => null,
+        ],
+
     ],
 
     /*

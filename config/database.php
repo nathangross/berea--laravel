@@ -97,7 +97,7 @@ return [
             'host' => env('WP_DB_HOST', ''),
             'database' => env('WP_DB_NAME', ''),
             'username' => env('WP_DB_USERNAME', ''),
-            'password' => env('WP_DB_password', ''),
+            'password' => env('WP_DB_PASSWORD', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => 'wp_',

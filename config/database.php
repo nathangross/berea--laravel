@@ -91,13 +91,13 @@ return [
             'prefix_indexes' => true,
         ],
 
-        'berea-wordpress' => [
+        'wordpress' => [
             // for WordPress database (used by Corcel)
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'database' => 'berea_wordpress',
-            'username' => 'root',
-            'password' => '',
+            'host' => env('WP_DB_HOST', ''),
+            'database' => env('WP_DB_NAME', 'berea_wordpress'),
+            'username' => env('WP_DB_USERNAME', 'root'),
+            'password' => env('WP_DB_password', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => 'wp_',

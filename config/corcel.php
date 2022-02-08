@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'connection' => 'berea-wordpress',
+    'connection' => 'wordpress',
 
     /*
     |--------------------------------------------------------------------------

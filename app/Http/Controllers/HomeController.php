@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function show()
     {
-        return view('welcome', [
+        return view('index', [
             'posts' => Post::all()
         ]);
     }

@@ -95,8 +95,8 @@ return [
             // for WordPress database (used by Corcel)
             'driver' => 'mysql',
             'host' => env('WP_DB_HOST', ''),
-            'database' => env('WP_DB_NAME', 'berea_wordpress'),
-            'username' => env('WP_DB_USERNAME', 'root'),
+            'database' => env('WP_DB_NAME', ''),
+            'username' => env('WP_DB_USERNAME', ''),
             'password' => env('WP_DB_password', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',

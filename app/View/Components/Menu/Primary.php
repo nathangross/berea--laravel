@@ -5,8 +5,14 @@ namespace App\View\Components\Menu;
 use Corcel\Model\Menu;
 use Illuminate\View\Component;
 
-class Brand extends Component
+class Primary extends Component
 {
+    /**
+     * The wordpress menu.
+     *
+     * @var string
+     */
+    public $menu;
 
     /**
      * Create a new component instance.
@@ -15,7 +21,7 @@ class Brand extends Component
      */
     public function __construct()
     {
-        // $this->menu = Menu::slug('brand')->first();
+        $this->menu = Menu::slug('primary')->first();
     }
 
     /**
@@ -25,7 +31,6 @@ class Brand extends Component
      */
     public function render()
     {
-        return view('components.menu.brand');
+        return view('components.menu.primary');
     }
-
 }

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .icon-button {
+        @apply h-12 w-12 flex items-center justify-center rounded-full text-center;
+    }
+
+    .button {
+        @apply inline-block text-center rounded-lg py-3 px-3 lg:px-6 transition-colors;
+    }
+
+    .button--primary {
+        @apply bg-action-light hover:bg-action-light-hover text-label-light-reverse uppercase font-bold font-sans tracking-wide;
+    }
+
+    .button--tertiary {
+        @apply border border-action-light hover:bg-black hover:bg-opacity-10 hover:border-action-light-hover text-action-light hover:text-action-light-hover uppercase font-bold font-sans tracking-wide;
+    }
+}

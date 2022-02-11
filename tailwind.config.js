@@ -85,7 +85,7 @@ module.exports = {
     plugins: [
         // require("@tailwindcss/aspect-ratio"),
         // require("tailwindcss-safe-area"),
-        // require("@tailwindcss/typography"),
+        require("@tailwindcss/typography"),
         // require("@tailwindcss/forms"),
     ],
 };

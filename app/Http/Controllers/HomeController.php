@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function show()
     {
         return view('index', [
-            'posts' => Post::all()
+            'post' => Post::find(63)
         ]);
     }
 }

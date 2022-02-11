@@ -4,7 +4,7 @@
             {{-- First button should be primary --}}
             @if ($loop->index < 1)
                 <li class="my-menu-item {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">
-                    <a class="button button--primary w-full" href="{{ $item->slug }}">
+                    <a class="button button--primary w-full" href="{{ route('page.show', $item->instance()) }}">
                         {{ $item->instance()->title }}
                     </a>
                 </li>
@@ -13,7 +13,7 @@
             {{-- All other buttons should be tertiary --}}
             @if ($loop->index >= 1)
                 <li class="my-menu-item {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">
-                    <a class="button button--tertiary w-full" href="{{ $item->slug }}">
+                    <a class="button button--tertiary w-full" href="{{ route('page.show', $item->instance()) }}">
                         {{ $item->instance()->title }}
                     </a>
                 </li>

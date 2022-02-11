@@ -4,7 +4,7 @@
             {{-- TODO: #1 Make primary navigation overflow value configurable in theme --}}
             @if ($loop->index < 4)
                 <li class="my-menu-item {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">
-                    <x-nav.primary.link href="{{ $item->slug }}">
+                    <x-nav.primary.link href="{{ route('page.show', $item->instance()) }}">
                         {!! $item->instance()->title !!}
                     </x-nav.primary.link>
                 </li>
@@ -27,7 +27,7 @@
             {{-- Navigation - Primary --- config.php --}}
             @foreach ($menu->items as $item)
                 @if ($loop->index >= 4)
-                    <x-nav.primary.link href="{{ $item->slug }}">
+                    <x-nav.primary.link href="{{ route('page.show', $item->instance()) }}">
                         {{ $item->instance()->title }}
                     </x-nav.primary.link>
                 @endif

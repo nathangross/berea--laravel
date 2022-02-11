@@ -3,14 +3,14 @@
         @foreach ($menu->items as $item)
             @if ($loop->index < 1)
                 <li class="my-menu-item {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">
-                    <a class="button button--primary" href="{{ $item->slug }}">
+                    <a class="button button--primary" href="{{ route('page.show', $item->instance()) }}">
                         {{ $item->instance()->title }}
                     </a>
                 </li>
             @endif
             @if ($loop->index >= 1)
                 <li class="my-menu-item {{ $item->classes ?? '' }} {{ $item->active ? 'active' : '' }}">
-                    <a class="button button--tertiary" href="{{ $item->slug }}">
+                    <a class="button button--tertiary" href="{{ route('page.show', $item->instance()) }}">
                         {{ $item->instance()->title }}
                     </a>
                 </li>
